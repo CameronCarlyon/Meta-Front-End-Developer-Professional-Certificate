@@ -1,14 +1,29 @@
-header {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white);
+}
+
+.flex-container {
+  display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   background-color: black;
-  font: bold;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
 }
 
 footer {
-  text-align: center;
-  border-radius: 5px;
-}
-
-.header_label {
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: black;
   color: white;
-  text-align: center;
 }

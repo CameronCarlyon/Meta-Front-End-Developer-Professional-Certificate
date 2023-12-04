@@ -1,29 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: white);
-}
-
-.flex-container {
-  display: flex;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: black;
 }
 
 header {
+  position: fixed;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 2rem;
+  background-color: rgb(22, 22, 22);
+}
+
+.container-nav li {
+  display: inline-block;
+  font-size: 25px;
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  padding: 0px 20px;
+}
+
+.container-nav li a {
+  transition: all 0.3s ease 0s;
+}
+
+.container-nav li a:hover {
+  color: white;
 }
 
 footer {
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  background-color: black;
+  background-color: rgb(22, 22, 22);
   color: white;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.flex-footer {
+  display: flex;
+  padding: 30px;
+}
+
+.container-box {
+  gap: 1rem;
+  padding: 5rem;
+  display: flex;
+}
+
+.container-text {
+  box-shadow: 5px 10px #888888;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-family: "Roboto Mono", monospace;
+  background-color: rgb(242, 242, 242);
+  padding: 5rem;
+}
+
+#search {
+  border: 0px;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: black;
+}
+
+button {
+  width: 8rem;
+  border: 0px;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  outline: 1px;
+  outline-color: #888888;
+}
+
+.hero-image {
+  width: 100%;
 }

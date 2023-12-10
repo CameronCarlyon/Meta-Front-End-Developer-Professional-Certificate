@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -40,10 +40,6 @@ a:hover {
 .container-nav li a:hover {
   color: white;
 }
-*/ footer {
-  background-color: rgb(22, 22, 22);
-  color: white;
-}
 
 .logo-container {
   justify-content: left;
@@ -69,12 +65,23 @@ a:hover {
 .hero-text {
   color: white;
   padding: 10%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  font-size: larger;
   font-weight: lighter;
 }
 
+.hero-text p {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .hero-text h1 {
-  font-family: "Times New Roman", Times, serif;
+  padding-top: 3rem;
+}
+
+.hero-text button {
+  font-size: medium;
+  padding: 3rem;
 }
 
 .hero-section-two {
@@ -88,11 +95,6 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.flex-footer {
-  display: flex;
-  padding: 30px;
 }
 
 .container-box {
@@ -120,28 +122,57 @@ a:hover {
 }
 
 button {
-  display: flex;
-}
-
-.hero-image {
-  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 5px;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 /* Product Showcase */
 
+.hero-image {
+  width: 100%;
+}
 .product-showcase-container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-
 .product-container {
   justify-content: center;
   border-radius: 1rem;
 }
-
 .product-image {
   border-radius: 1rem;
   justify-content: center;
   width: 40%;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: rgb(22, 22, 22);
+  color: white;
+}
+.flex-footer label {
+  justify-content: center;
+  padding: 3rem;
+  width: 100%;
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  font-size: 2rem;
+}
+
+#newsletter {
+  background-color: rgb(22, 22, 22);
+}
+
+#footer-location {
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  font-size: 1.5rem;
 }

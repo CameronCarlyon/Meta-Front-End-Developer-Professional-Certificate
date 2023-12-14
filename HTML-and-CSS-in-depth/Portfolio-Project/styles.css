@@ -6,17 +6,19 @@
   padding: 0;
 }
 
-/* HEADER */
+html {
+  scroll-behavior: smooth;
+}
+
+/* HEADER CONTAINER */
 
 header {
   position: fixed;
   display: flex;
-  margin-top: auto;
-  margin-bottom: auto;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1.3rem;
   background-color: rgb(22, 22, 22);
 }
 
@@ -72,9 +74,14 @@ a {
   transform: translate(+290%, +9%);
 }
 
-/* HERO SECTION */
+/* HOME CONTAINER */
 
-.hero-section {
+main {
+  scroll-snap-type: x mandatory;
+}
+
+.home-container {
+  scroll-snap-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("media/pexels-pixabay-265906.jpg");
   background-size: cover;
@@ -125,50 +132,38 @@ a {
   padding-top: 12rem;
 }
 
-.hero-section-two {
+/* PRODUCTS CONTAINER */
+
+/* OWNER CONTAINER */
+
+.owner-container {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("media/pexels-khairul-onggon-908184.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80%;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-text-two {
-  width: 100%;
-  color: white;
-  padding: 10rem;
   font-family: "Raleway", "Arial Narrow Bold", sans-serif;
   font-size: larger;
   font-weight: lighter;
+  color: white;
+  justify-content: center;
+  /* height: 80%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.owner-text {
+  width: 100%;
+  color: white;
+  padding: 10rem;
+
   grid-column: span 1 / span 1;
   padding-top: 3rem;
   padding-bottom: 2rem;
   display: flex;
   justify-content: center;
-}
-
-.hero-section-two * {
-  padding: 10rem;
-}
-
-.container-box {
-  gap: 1rem;
-  padding: 5rem;
-  display: flex;
-}
-
-.container-text {
-  box-shadow: 5px 10px #888888;
-  border-radius: 1rem;
-  font-size: 1rem;
-  font-family: "Roboto Mono", monospace;
-  background-color: rgb(242, 242, 242);
-  padding: 5rem;
 }
 
 #search {

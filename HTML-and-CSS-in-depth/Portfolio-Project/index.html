@@ -109,15 +109,42 @@
       <div class="contact-container" id="contact-us">
         <div class="contact-text">
           <h1>Contact Us</h1>
+          <p>
+            Looking for a bespoke package or simply wishing to have your opinion
+            heard? Simply fill in your details below and we'll get back in touch
+            shortly.
+          </p>
           <form>
-            <label for="contact-form"
-              >Looking for a bespoke package or simply wishing to have your
-              opinion heard? Simply fill in your details below and we'll get
-              back in touch shortly.</label
-            >
-            <input type="text" id="contact-fname" />
-            <input type="text" id="contact-lname" />
-            <input type="email" id="contact" />
+            <input
+              id="contact-fname"
+              class="name-input"
+              placeholder="First name"
+              required
+            />
+            <input
+              id="contact-lname"
+              class="name-input"
+              placeholder="Last name"
+              required
+            /><br />
+            <input type="email" id="email-input" placeholder="Email address" />
+            <textarea
+              id="message-input"
+              placeholder="Write your message here..."
+            ></textarea>
+            <!-- <div id="gender-selection">
+              <input type="radio" id="gender-male" name="gender" value="Male" />
+              <label for="gender-male">Male</label>
+              <input
+                type="radio"
+                id="gender-female"
+                name="gender"
+                value="Female"
+              />
+              <label for="gender-female">Female</label>
+              <input type="radio" id="gender-na" name="gender" value="NA" />
+              <label for="gender-na">Prefer not to say</label><br />
+            </div> -->
             <div class="custom-btn" a href="#">Get In Touch!</div>
           </form>
         </div>
@@ -125,13 +152,10 @@
     </main>
     <footer>
       <div class="flex-footer">
-        <!-- <form>
-          <label for="newsletter-form"
-            >Get updates on all things Mangata and Gallo by subscribing to our
-            weekly newsletter.</label
-          >
-          <input type="email" id="newsletter" />
-        </form> -->
+        <div class="footer-location">
+          <i class="fa-solid fa-location-dot" style="font-size: 1.5rem"></i>
+          <p>Austin, Texas</p>
+        </div>
         <div class="social-media-icons">
           <i class="fa-brands fa-facebook-f"></i>
           <i class="fa-brands fa-twitter"></i>
@@ -140,8 +164,6 @@
         </div>
         <div>
           <p>Copyright 2024 by Mangata & Gallo. All Rights Reserved.</p>
-          <i class="fa-solid fa-location-dot" style="font-size: 1.5rem"></i>
-          <p id="footer-location">Austin, Texas</p>
         </div>
       </div>
     </footer>

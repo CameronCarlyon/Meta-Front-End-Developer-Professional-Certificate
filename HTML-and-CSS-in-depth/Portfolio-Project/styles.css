@@ -115,6 +115,7 @@ main {
   padding-bottom: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
 }
 
 .hero-text {
@@ -156,6 +157,10 @@ main {
 
 /* PRODUCTS CONTAINER */
 
+.products-container {
+  height: 100vh;
+}
+
 .product-image {
   border-radius: 1rem;
   justify-content: center;
@@ -179,6 +184,7 @@ main {
   font-size: larger;
   font-weight: lighter;
   color: white;
+  height: 100vh;
 }
 
 .owner-text * {
@@ -197,7 +203,64 @@ main {
 
 /* SERVICES CONTAINER */
 
+.services-container {
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  display: flex;
+  height: 100vh;
+}
 
+.services-container * {
+  width: 100%;
+  text-align: center;
+  padding: 3rem;
+  text-shadow: 0px 0px 30px #000000;
+}
+
+.services-container * :hover {
+  text-shadow: 0px 0px 10px #000000;
+}
+
+.service-block {
+  text-align: center;
+  width: auto;
+  color: rgba(0, 0, 0, 0);
+}
+
+.service-block:hover {
+  color: white;
+}
+
+#service-engagements {
+  background: url("media/services-engagements.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+}
+
+#service-weddings {
+  background: url("media/services-weddings.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+}
+
+#service-anniversaries {
+  background: url("media/services-anniversaries.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+}
+
+#service-other {
+  background: url("media/services-other.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+}
 
 /* CONTACT CONTAINER */
 .contact-container {
@@ -208,6 +271,7 @@ main {
   background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 37rem;
+  height: 100vh;
 }
 
 .contact-text {

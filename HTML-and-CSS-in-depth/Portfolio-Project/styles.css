@@ -40,79 +40,54 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 1.3rem;
+  padding: 0rem 6rem 0rem 6rem;
   background-color: rgb(22, 22, 22);
 }
 
-header i {
+.logo-container {
+  display: flex;
+  cursor: pointer;
+}
+
+.container-nav {
+  display: flex;
+  padding: 0rem 2rem 0rem 2rem;
+}
+
+.container-nav div * {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  font-size: 18px;
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  font-weight: lighter;
+  color: white;
+  padding: 1.2rem 20px 1.2rem 20px;
+  margin: 0rem 1rem 0rem 1rem;
+}
+
+.container-nav div a:hover {
+  background-color: rgb(11, 11, 11);
+}
+
+.container-nav i {
+  display: flex;
   color: white;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.container-nav {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.container-nav li {
-  display: inline-block;
-  font-size: 18px;
-  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
-  font-weight: lighter;
-  color: white;
-  padding: 0px 20px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-.container-nav li a:hover {
-  font-weight: bold;
-}
-
-.logo-container {
-  display: flex;
-  padding-left: 4rem;
-  cursor: pointer;
-}
-
-.container-search {
-  display: flex;
-  align-items: center;
-  padding-right: 3rem;
-  padding-left: 10rem;
-}
-
-.container-search i {
-  cursor: pointer;
-}
-
-.search-icon-container {
-  position: absolute;
-  transform: translate(+290%, +9%);
-}
-
 /* HOME CONTAINER */
-
-main {
-  scroll-snap-type: x mandatory;
-}
 
 .home-container {
   scroll-snap-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("media/hero-home.jpg");
+    url("assets/hero-home.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 80%;
-  padding: 20px;
-  padding-top: 13rem;
-  padding-bottom: 2rem;
+  padding: 12rem 2rem 0rem 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   height: 100vh;
@@ -176,7 +151,7 @@ main {
   text-align: center;
   padding: 20rem;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("media/hero-owner.jpg");
+    url("assets/hero-owner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -207,21 +182,15 @@ main {
   font-family: "Raleway", "Arial Narrow Bold", sans-serif;
   display: flex;
   height: 100vh;
+  overflow-x: scroll;
 }
 
 .services-container * {
-  width: 100%;
   text-align: center;
   padding: 3rem;
-  text-shadow: 0px 0px 30px #000000;
-}
-
-.services-container * :hover {
-  text-shadow: 0px 0px 10px #000000;
 }
 
 .service-block {
-  text-align: center;
   width: auto;
   color: rgba(0, 0, 0, 0);
 }
@@ -231,7 +200,7 @@ main {
 }
 
 #service-engagements {
-  background: url("media/services-engagements.jpg");
+  background: url("assets/services-engagements.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -239,7 +208,7 @@ main {
 }
 
 #service-weddings {
-  background: url("media/services-weddings.jpg");
+  background: url("assets/services-weddings.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -247,7 +216,7 @@ main {
 }
 
 #service-anniversaries {
-  background: url("media/services-anniversaries.jpg");
+  background: url("assets/services-anniversaries.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -255,7 +224,7 @@ main {
 }
 
 #service-other {
-  background: url("media/services-other.jpg");
+  background: url("assets/services-other.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -265,7 +234,7 @@ main {
 /* CONTACT CONTAINER */
 .contact-container {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("media/hero-contact.jpg");
+    url("assets/hero-contact.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -340,6 +309,7 @@ input {
 .flex-footer {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   padding: 30px;
   background-color: rgb(22, 22, 22);
   color: white;

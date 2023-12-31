@@ -42,16 +42,11 @@ header {
   align-items: center;
   padding: 0rem 6rem 0rem 6rem;
   background-color: rgb(22, 22, 22);
-}
-
-.logo-container {
-  display: flex;
-  cursor: pointer;
+  z-index: 1;
 }
 
 .container-nav {
   display: flex;
-  padding: 0rem 2rem 0rem 2rem;
 }
 
 .container-nav div * {
@@ -70,11 +65,11 @@ header {
   background-color: rgb(11, 11, 11);
 }
 
-.container-nav i {
+.container-nav * {
   display: flex;
   color: white;
   padding-left: 1rem;
-  padding-right: 1rem;
+  text-decoration: none;
 }
 
 /* HOME CONTAINER */
@@ -93,6 +88,10 @@ header {
   height: 100vh;
 }
 
+.home-container img {
+  width: 20rem;
+}
+
 .hero-text {
   width: 100%;
   color: white;
@@ -101,7 +100,7 @@ header {
   font-family: "Raleway", "Arial Narrow Bold", sans-serif;
   font-size: larger;
   font-weight: lighter;
-  grid-column: span 1 / span 1;
+  /* grid-column: span 1 / span 1; */
 }
 
 .down-arrow {
@@ -115,10 +114,9 @@ header {
   align-items: flex-end;
 }
 
-.down-arrow i {
+.down-arrow a {
   color: rgba(255, 255, 255, 0.4);
-  display: flex;
-  justify-content: center;
+  text-decoration: none;
 }
 
 .hero-text p {
@@ -132,8 +130,14 @@ header {
 
 /* PRODUCTS CONTAINER */
 
+.products-mega-container {
+  display: flex;
+}
+
 .products-container {
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
   height: 100vh;
+  text-align: center;
 }
 
 .product-image {
@@ -187,7 +191,7 @@ header {
 
 .services-container * {
   text-align: center;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .service-block {
@@ -231,6 +235,10 @@ header {
   display: grid;
 }
 
+.service-text * {
+  text-align: center;
+}
+
 /* CONTACT CONTAINER */
 .contact-container {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -239,8 +247,9 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   display: grid;
-  grid-template-columns: 37rem;
+  grid-template-columns: 27rem;
   height: 100vh;
+  padding: 0rem 6rem 0rem 6rem;
 }
 
 .contact-text {
@@ -248,9 +257,7 @@ header {
   font-family: "Raleway", "Arial Narrow Bold", sans-serif;
   font-size: larger;
   font-weight: lighter;
-
-  margin: 5rem;
-  margin-top: 18rem;
+  margin-top: 20rem;
 }
 
 .contact-text * {
@@ -268,15 +275,6 @@ input {
   border: 1px solid #ffffff55;
   border-radius: 0.5rem;
   color: #fff;
-}
-
-#gender-selection {
-  width: auto;
-  text-align: center;
-}
-
-#gender-selection * {
-  margin: 0.6rem;
 }
 
 .name-input {
@@ -310,26 +308,34 @@ input {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 3rem;
   background-color: rgb(22, 22, 22);
   color: white;
-}
-.flex-footer label {
-  justify-content: center;
-  padding: 3rem;
-  width: 100%;
-  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
-  font-size: 2rem;
 }
 
 .footer-location {
   width: 100%;
-  border: 1px solid white;
-  justify-content: center;
+  text-align: center;
   font-family: "Raleway", "Arial Narrow Bold", sans-serif;
   font-size: 1.5rem;
+  color: rgb(49, 49, 49);
 }
 
-social-media-icons {
-  font-size: 6rem;
+.social-media-icons {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.social-media-icons a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+#footer-copyright {
+  font-family: "Raleway", "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  color: rgb(49, 49, 49);
 }

@@ -13,13 +13,15 @@
   <body>
     <header>
       <div class="logo-container">
-        <img
+        <a href="#home">
+          <img
           class="logo"
           src="assets/Asset 4@3x.png"
           alt="Mangata and Gallo logo."
           width="300px"
           draggable="false"
         />
+        </a>
       </div>
       <div class="container-nav">
         <div><a href="#home">Home</a></div>
@@ -50,44 +52,48 @@
             <div class="custom-btn" a href="#">Browse Our Full Catalogue</div>
           </div>
           <div class="down-arrow">
-            <i class="fa-solid fa-angle-down" style="font-size: 5rem"></i>
+            <a href="#products">
+              <i class="fa-solid fa-angle-down" style="font-size: 5rem"></i>
+            </a>
           </div>
         </div>
         <div class="products-container" id="products">
           <h1>Featured Products</h1>
-          <img
-            class="product-image"
-            src="assets/product-one-main.jpg"
-            alt="placeholder"
-          />
-          <div class="product-info">
-            <h3>Product1</h3>
-            <p>Product description.</p>
+          <div class="products-mega-container">
+            <div class="product-box">
+              <img
+                class="product-image"
+                src="assets/product-one-main.jpg"
+                alt="placeholder"
+              />
+              <div class="product-info">
+                <h3>Product1</h3>
+                <p>Product description.</p>
+              </div>
+            </div>
+          <div class="product-box">
+            <img
+              class="product-image"
+              src="assets/product-two-main.jpg"
+              alt="placeholder"
+            />
+            <div class="product-info">
+              <h3>Product2</h3>
+              <p>Product description.</p>
+            </div>
           </div>
-        </div>
-        <div class="product-container">
-          <img
-            class="product-image"
-            src="assets/product-two-main.jpg"
-            alt="placeholder"
-          />
-          <div class="product-info">
-            <h3>Product2</h3>
-            <p>Product description.</p>
+          <div class="product-box">
+            <img
+              class="product-image"
+              src="assets/product-three-main.jpg"
+              alt="placeholder"
+            />
+            <div class="product-info">
+              <h3>Product3</h3>
+              <p>Product description.</p>
+            </div>
           </div>
-        </div>
-        <div class="product-container">
-          <img
-            class="product-image"
-            src="assets/product-three-main.jpg"
-            alt="placeholder"
-          />
-          <div class="product-info">
-            <h3>Product3</h3>
-            <p>Product description.</p>
           </div>
-        </div>
-        <div class="product-catagory-1"></div>
       </div>
       <div class="owner-container">
         <div class="owner-text">
@@ -103,32 +109,40 @@
       </div>
       <div class="services-container" id="services">
         <div class="service-block" id="service-engagements">
-          <h2>Engagements</h2>
-          <p>
-            Crafting dreams into dazzling realities with our exquisite
-            engagement rings, capturing the essence of your love story.
-          </p>
+          <div class="service-text">
+            <h2>Engagements</h2>
+            <p>
+              Crafting dreams into dazzling realities with our exquisite
+              engagement rings, capturing the essence of your love story.
+            </p>
+          </div>
         </div>
         <div class="service-block" id="service-weddings">
-          <h2>Weddings</h2>
-          <p>
-            Elevate your special day with our timeless wedding jewelry,
-            symbolizing enduring love and unparalleled elegance.
-          </p>
+          <div class="service-text">
+            <h2>Weddings</h2>
+            <p>
+              Elevate your special day with our timeless wedding jewelry,
+              symbolizing enduring love and unparalleled elegance.
+            </p>
+          </div>
         </div>
         <div class="service-block" id="service-anniversaries">
-          <h2>Anniversaries</h2>
-          <p>
-            Celebrate milestones with enduring beauty. Our anniversary
-            collection tells stories of love that stand the test of time.
-          </p>
+          <div class="service-text">
+            <h2>Anniversaries</h2>
+            <p>
+              Celebrate milestones with enduring beauty. Our anniversary
+              collection tells stories of love that stand the test of time.
+            </p>
+          </div>
         </div>
         <div class="service-block" id="service-other">
-          <h2>Other</h2>
-          <p>
-            Discover unique and personalized jewelry for every occasion, where
-            each piece tells a story as unique as the wearer.
-          </p>
+          <div class="service-text">
+            <h2>Other</h2>
+            <p>
+              Discover unique and personalized jewelry for every occasion, where
+              each piece tells a story as unique as the wearer.
+            </p>
+          </div>
         </div>
       </div>
       <div class="contact-container" id="contact-us">
@@ -157,19 +171,6 @@
               id="message-input"
               placeholder="Write your message here..."
             ></textarea>
-            <!-- <div id="gender-selection">
-              <input type="radio" id="gender-male" name="gender" value="Male" />
-              <label for="gender-male">Male</label>
-              <input
-                type="radio"
-                id="gender-female"
-                name="gender"
-                value="Female"
-              />
-              <label for="gender-female">Female</label>
-              <input type="radio" id="gender-na" name="gender" value="NA" />
-              <label for="gender-na">Prefer not to say</label><br />
-            </div> -->
             <div class="custom-btn" a href="#">Get In Touch!</div>
           </form>
         </div>
@@ -182,13 +183,14 @@
           <p>Austin, Texas</p>
         </div>
         <div class="social-media-icons">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin-in"></i>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
-        <div>
-          <p>Copyright 2024 by Mangata & Gallo. All Rights Reserved.</p>
+        <div id="footer-copyright">
+          <p>© 2024 Mangata & Gallo</p>
+          <p>All Rights Reserved</p>
         </div>
       </div>
     </footer>

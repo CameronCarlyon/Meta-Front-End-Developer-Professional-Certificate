@@ -40,8 +40,9 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 6rem 0rem 6rem;
+  padding: 0% 5% 0% 5%;
   background-color: rgb(22, 22, 22);
+  overflow-x: scroll;
   z-index: 1;
 }
 
@@ -66,7 +67,6 @@ header {
 }
 
 .container-nav * {
-  display: flex;
   color: white;
   padding-left: 1rem;
   text-decoration: none;
@@ -75,32 +75,24 @@ header {
 /* HOME CONTAINER */
 
 .home-container {
-  scroll-snap-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("assets/hero-home.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 80%;
-  padding: 12rem 2rem 0rem 2rem;
+  padding: 25% 5% 0% 5%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   height: 100vh;
-}
-
-.home-container img {
-  width: 20rem;
+  overflow: hidden;
 }
 
 .hero-text {
-  width: 100%;
+  width: 50%;
   color: white;
-  padding: 10%;
-  padding-left: 4rem;
   font-family: "Raleway", "Arial Narrow Bold", sans-serif;
   font-size: larger;
   font-weight: lighter;
-  /* grid-column: span 1 / span 1; */
 }
 
 .down-arrow {
@@ -134,18 +126,59 @@ header {
   font-family: "Raleway", "Arial Narrow Bold", sans-serif;
   height: 100vh;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #f0f0f4;
+}
+
+.product-box {
+  border-radius: 1rem;
 }
 
 .products-mega-container {
   display: flex;
+  justify-content: center;
 }
 
-.product-image {
-  border-radius: 1rem;
-  justify-content: center;
-  width: 40%;
+.product-info * {
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+#product-one {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
+    url("assets/product-one-main.jpg");
+  background-size: cover;
+}
+
+#product-one:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
+    url("assets/product-one-secondary.jpg");
+  background-size: cover;
+}
+
+#product-two {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
+    url("assets/product-two-main.jpg");
+  background-size: cover;
+}
+
+#product-two:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
+    url("assets/product-two-secondary.jpg");
+  background-size: cover;
+}
+
+#product-three {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
+    url("assets/product-three-main.jpg");
+  background-size: cover;
+}
+
+#product-three:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
+    url("assets/product-three-secondary.jpg");
+  background-size: cover;
 }
 
 /* OWNER CONTAINER */
@@ -238,7 +271,6 @@ header {
 }
 
 .service-text * {
-  text-align: center;
 }
 
 /* CONTACT CONTAINER */
@@ -251,7 +283,7 @@ header {
   display: grid;
   grid-template-columns: 27rem;
   height: 100vh;
-  padding: 0rem 6rem 0rem 6rem;
+  padding: 0% 5% 0% 5%;
 }
 
 .contact-text {

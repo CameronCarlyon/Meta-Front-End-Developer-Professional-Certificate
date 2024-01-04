@@ -124,61 +124,83 @@ header {
 
 .products-container {
   font-family: "Raleway", "Arial Narrow Bold", sans-serif;
-  height: 100vh;
   text-align: center;
+  letter-spacing: 0.1rem;
   justify-content: space-between;
-  background-color: #f0f0f4;
-}
-
-.product-box {
-  border-radius: 1rem;
+  padding: 8% 5% 4% 5%;
+  background: linear-gradient(#eaeaeab3, #f4f4f456),
+    url("assets/featured-products-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .products-mega-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-.product-info * {
-  text-align: center;
+.products-mega-container a {
+  text-decoration: none;
+  padding: 5.6%;
+}
+
+.product-box {
+  border-radius: 1rem;
+  width: 300px;
+  height: 500px;
+}
+
+.product-box * {
+  padding: 3rem 0rem 3rem 0rem;
+}
+
+.product-info {
+  color: rgba(255, 255, 255, 0);
   padding: 1rem;
-  color: #fff;
+}
+
+.product-info:hover {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 #product-one {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
-    url("assets/product-one-main.jpg");
+  background: url("assets/product-one-main.jpg");
   background-size: cover;
 }
 
 #product-one:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
     url("assets/product-one-secondary.jpg");
   background-size: cover;
+  box-shadow: 0 0 0.6rem 0 rgba(0, 0, 0, 0.5);
 }
 
 #product-two {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
-    url("assets/product-two-main.jpg");
+  background: url("assets/product-two-main.jpg");
   background-size: cover;
 }
 
 #product-two:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
     url("assets/product-two-secondary.jpg");
   background-size: cover;
+  box-shadow: 0 0 0.6rem 0 rgba(0, 0, 0, 0.5);
 }
 
 #product-three {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
-    url("assets/product-three-main.jpg");
+  background: url("assets/product-three-main.jpg");
   background-size: cover;
 }
 
 #product-three:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
     url("assets/product-three-secondary.jpg");
   background-size: cover;
+  box-shadow: 0 0 0.6rem 0 rgba(0, 0, 0, 0.5);
 }
 
 /* OWNER CONTAINER */
@@ -198,21 +220,11 @@ header {
   font-size: larger;
   font-weight: lighter;
   color: white;
-  height: 100vh;
+  height: 1080px;
 }
 
 .owner-text * {
   max-width: 50rem;
-  padding: 1rem;
-}
-
-#search {
-  border: 0.2px solid #fff;
-  border-radius: 0.5rem;
-  border-color: white;
-  color: white;
-  padding: 0.5rem;
-  background-color: rgba(22, 22, 22, 100%);
 }
 
 /* SERVICES CONTAINER */
@@ -236,6 +248,7 @@ header {
 
 .service-block:hover {
   color: white;
+  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 #service-engagements {
@@ -270,10 +283,8 @@ header {
   display: grid;
 }
 
-.service-text * {
-}
-
 /* CONTACT CONTAINER */
+
 .contact-container {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("assets/hero-contact.jpg");

@@ -220,7 +220,6 @@ header {
   font-size: larger;
   font-weight: lighter;
   color: white;
-  height: 1080px;
 }
 
 .owner-text * {
@@ -246,9 +245,18 @@ header {
   color: rgba(0, 0, 0, 0);
 }
 
-.service-block:hover {
+.service-block * {
+  color: #ffffff00;
+  background-color: #ffffff00;
+}
+
+.service-block:hover * {
   color: white;
   text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.service-block h2 {
+  padding-top: 100%;
 }
 
 #service-engagements {

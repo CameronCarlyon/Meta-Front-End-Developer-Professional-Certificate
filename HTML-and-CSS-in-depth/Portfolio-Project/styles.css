@@ -81,9 +81,10 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 80%;
-  padding: 25% 5% 0% 5%;
+  padding: 220px 5% 0% 5%;
   display: grid;
-  height: 100vh;
+  grid-template-columns: 700px;
+  height: 900px;
   overflow: hidden;
 }
 
@@ -221,10 +222,12 @@ header {
   font-size: larger;
   font-weight: lighter;
   color: white;
+  height: 900px;
 }
 
 .owner-text * {
   max-width: 50rem;
+  padding: 0px 20px 0px 20px;
 }
 
 /* SERVICES CONTAINER */
@@ -232,7 +235,7 @@ header {
 .services-container {
   font-family: "Raleway", "Arial Narrow Bold", sans-serif;
   display: flex;
-  height: 100vh;
+  height: 900px;
   overflow-x: scroll;
 }
 
@@ -253,7 +256,7 @@ header {
 
 .service-block:hover * {
   color: white;
-  text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+  text-shadow: 0.1rem 0.1rem 2rem rgba(0, 0, 0, 5);
 }
 
 .service-block h2 {
@@ -301,9 +304,9 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   display: grid;
-  grid-template-columns: 27rem;
-  height: 100vh;
-  padding: 0% 5% 0% 5%;
+  grid-template-columns: 22rem;
+  height: 900px;
+  padding: 320px 5% 0% 5%;
 }
 
 .contact-text {
@@ -311,7 +314,7 @@ header {
   font-family: "Raleway", "Arial Narrow Bold", sans-serif;
   font-size: larger;
   font-weight: lighter;
-  margin-top: 20rem;
+  /* margin-top: 20rem; */
 }
 
 .contact-text * {
@@ -332,7 +335,7 @@ input {
 }
 
 .name-input {
-  width: 49.4%;
+  width: 49%;
   font-family: "Raleway", "Arial Narrow Bold", sans-serif;
   font-size: medium;
 }

@@ -48,6 +48,7 @@ header {
 
 .container-nav {
   display: flex;
+  min-width: fit-content;
 }
 
 .container-nav div * {
@@ -58,8 +59,7 @@ header {
   font-family: "Raleway", "Arial Narrow Bold", sans-serif;
   font-weight: lighter;
   color: white;
-  padding: 1.2rem 20px 1.2rem 20px;
-  margin: 0rem 1rem 0rem 1rem;
+  padding: 1.2rem 2rem 1.2rem 2rem;
 }
 
 .container-nav div a:hover {
@@ -68,8 +68,13 @@ header {
 
 .container-nav * {
   color: white;
-  padding-left: 1rem;
+  padding-left: 2rem;
   text-decoration: none;
+  min-width: fit-content;
+}
+
+.logo-container img {
+  vertical-align: middle;
 }
 
 /* HOME CONTAINER */
@@ -228,6 +233,7 @@ header {
 .owner-text * {
   max-width: 50rem;
   padding: 0px 20px 0px 20px;
+  vertical-align: middle;
 }
 
 /* SERVICES CONTAINER */

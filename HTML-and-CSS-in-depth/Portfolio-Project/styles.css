@@ -104,12 +104,8 @@ header {
 .down-arrow {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
-  width: 100%;
+  left: 48%;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 
 .down-arrow a {
@@ -140,6 +136,10 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+
+.products-container h1 {
+  padding-top: 2rem;
 }
 
 .products-mega-container {
@@ -217,7 +217,7 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20rem 0rem 20rem 0rem;
+  padding: 20rem 0rem 0rem 0rem;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("assets/hero-owner.jpg");
   background-size: cover;
